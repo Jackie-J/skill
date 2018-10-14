@@ -1,6 +1,7 @@
 package top.jackie;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Set;
 
@@ -14,6 +15,10 @@ public class Tests {
         List<String> list = new ArrayList<>();
         Set<String> set = Sets.newHashSet(list);
         System.out.println(set.size());
+    }
+    
+    public static void main(String[] args) {
+        System.out.println(new Date(69543109L));
     }
 
 }
