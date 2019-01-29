@@ -1,5 +1,6 @@
 package top.jackie.test;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import javax.annotation.PostConstruct;
@@ -20,9 +21,10 @@ public class Tests {
     }
 
     public static void main(String[] args) {
-        System.out.println(new Date(1539218996524L));
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        System.out.println(sdf.format(new Date(1540543024083L)));
 
-        System.out.println(new Date(1539219011524L));
+        System.out.println(sdf.format(new Date(1540542879939L)));
     }
 
 }

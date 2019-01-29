@@ -16,9 +16,11 @@ public class Tests {
         Set<String> set = Sets.newHashSet(list);
         System.out.println(set.size());
     }
-    
+
     public static void main(String[] args) {
-        System.out.println(new Date(69543109L));
+        System.out.println(new Date(1543569839525L));
+
+        System.out.println(new Date(1543477245383L));
     }
 
 }
