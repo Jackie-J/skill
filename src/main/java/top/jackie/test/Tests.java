@@ -7,7 +7,7 @@ import javax.annotation.PostConstruct;
 
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class Tests {
 
     @PostConstruct
