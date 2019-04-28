@@ -10,7 +10,7 @@ import org.apache.shiro.util.Factory;
 public class ShiroTest {
 
     public static void main(String[] args) {
-        test();
+        test1();
     }
 
     public static void test() {
@@ -22,5 +22,11 @@ public class ShiroTest {
         subject.login(token);
         System.out.println(subject.isAuthenticated());
     }
+    
+    public static void test1() {
+        ShiroUtil.login("classpath:shiro-role.ini", "xiang", "123");
+        System.out.println(ShiroUtil.subject().hasRole("role1"));
+    }
+    
 
 }
