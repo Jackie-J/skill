@@ -10,15 +10,16 @@ import org.apache.shiro.util.Factory;
 public class ShiroTest {
 
     public static void main(String[] args) {
-        test1();
+        test();
     }
 
     public static void test() {
         Factory<SecurityManager> factory = new IniSecurityManagerFactory("classpath:shiro-multi-realm.ini");
         SecurityManager manager = factory.getInstance();
+
         SecurityUtils.setSecurityManager(manager);
         Subject subject = SecurityUtils.getSubject();
-        UsernamePasswordToken token = new UsernamePasswordToken("xiang","1233");
+        UsernamePasswordToken token = new UsernamePasswordToken("xiang1","1233");
         subject.login(token);
         System.out.println(subject.isAuthenticated());
     }
